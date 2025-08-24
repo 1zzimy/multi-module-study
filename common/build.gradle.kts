@@ -6,9 +6,8 @@ plugins {
 }
 
 dependencies {
-
-    implementation(project(":auth"))
-    implementation(project(":common"))
+    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 
     // JPA
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
@@ -20,11 +19,4 @@ dependencies {
     // Kotlin
     implementation(kotlin("stdlib"))
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-
-    // Test
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-
-    // PasswordEncoder
-    implementation("org.springframework.security:spring-security-crypto")
 }
