@@ -1,6 +1,6 @@
 package dev.nft.apple.entity
 
-import dev.nft.entity.BaseEntity
+import dev.nft.core.entity.BaseEntity
 import jakarta.persistence.*
 
 @Entity
