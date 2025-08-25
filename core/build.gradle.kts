@@ -19,4 +19,7 @@ dependencies {
     // Kotlin
     implementation(kotlin("stdlib"))
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+    // PasswordEncoder
+    implementation("org.springframework.security:spring-security-crypto")
 }
