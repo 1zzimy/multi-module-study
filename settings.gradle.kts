@@ -1,2 +1,4 @@
 rootProject.name = "multi-module-study"
-include(":api", ":user", ":auth", ":infra", ":core")
+
+include(":core", ":infra")
+include(":api", ":user", ":auth", ":apple")
