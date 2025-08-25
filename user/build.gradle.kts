@@ -22,4 +22,7 @@ dependencies {
     // Test
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+
+    // PasswordEncoder
+    implementation("org.springframework.security:spring-security-crypto")
 }
