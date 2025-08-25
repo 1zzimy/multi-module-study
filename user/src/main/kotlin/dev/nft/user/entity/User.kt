@@ -1,12 +1,7 @@
 package dev.nft.user.entity
 
-import dev.nft.common.BaseEntity
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.Table
+import dev.nft.entity.BaseEntity
+import jakarta.persistence.*
 
 @Entity
 @Table(name = "users")
@@ -23,7 +18,7 @@ class User(
 
     @Column(nullable = false)
     var password: String
-): BaseEntity() {
+) : BaseEntity() {
     companion object {
         @JvmStatic // 이걸 붙이면 자바에서 호출 가능
         fun create(name: String, email: String, password: String) =

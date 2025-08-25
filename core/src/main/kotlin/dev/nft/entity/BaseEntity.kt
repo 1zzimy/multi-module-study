@@ -1,4 +1,4 @@
-package dev.nft.common
+package dev.nft.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.EntityListeners
