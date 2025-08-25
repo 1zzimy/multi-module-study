@@ -6,9 +6,8 @@ plugins {
 }
 
 dependencies {
-
     implementation(project(":auth"))
-    implementation(project(":common"))
+    implementation(project(":core"))
 
     // JPA
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
